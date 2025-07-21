@@ -1,11 +1,5 @@
-int main(){
-	int a[10]={2,6,4,8,9,5};
-	int l=6;
-	for(int i=0;i<l;i++){
-		cout<<a[i];
-	}
-	
-}
+#include<iostream>
+using namespace std;
 void Selection(int arr[],int n){
 	for(int i=0;i<n-2;i++){
 		int min=i;
@@ -16,5 +10,16 @@ void Selection(int arr[],int n){
 		int temp=arr[i];
 		arr[i]=arr[min];
 		arr[min]=temp;
+	}
+}
+int main(){
+	int a[10]={2,6,4,8,9,5};
+	int l=6;
+	for(int i=0;i<l;i++){
+		cout<<a[i];
+	}
+	Selection(a,l);
+	for(int i=0;i<l;i++){
+		cout<<a[i];
 	}
 }

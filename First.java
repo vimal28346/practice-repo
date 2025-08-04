@@ -1,5 +1,7 @@
-class Main{
+import Arithmetic.*;
+class First{
 	public static void main(String args[]){
-		System.out.println("Start");
+		Arith obj=new Arith();
+		System.out.println(obj.add(2,6));
 	}
 }
